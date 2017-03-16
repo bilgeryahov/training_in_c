@@ -21,6 +21,7 @@ void push(data i){
 data pop(void){
 	if(top == 0){
 		printf("The stack is empty! \n");
+		return -1;	
 	}
 	else{
 		return stack[--top];
