@@ -4,6 +4,7 @@ int main(){
 	// Actual variable declaration.
 	int var = 20;
 	
+	// Memory locations pointed to by ip, contain integers.
 	// Pointer variable declaration.
 	int *ip;
 	
