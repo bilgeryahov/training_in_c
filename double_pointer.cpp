@@ -1,10 +1,10 @@
 #include <stdio.h>
 
-// Here *pointer means that the parameter that this function will expect will be a pointer. 
-// Basically this is the meaning of the star.
+// Here *pointer means that the parameter that this function 
+// will expect will be a pointer. 
 void changeViaPointer(int *pointer);
 
-// Pointer to a pointer.
+// Pointer of a pointer.
 void changeViaPointerInBetween(int **pointer);
 
 int main(){
@@ -15,10 +15,10 @@ int main(){
 	// Here *pointer means that the variable that is declared will be a pointer.
 	int *pointer;
 	
-	// Actually asigning value to the variable.
+	// Actually asigning value to the pointer variable.
 	pointer = &number;
 	
-	// Pointer to a pointer.
+	// Pointer of a pointer.
 	int **pointerInBetween;
 	
 	// Assigning value to the pointer of a pointer. 
@@ -49,5 +49,10 @@ void changeViaPointer(int *pointer){
 }
 
 void changeViaPointerInBetween(int **pointer){
+	
+	// **pointer explanation:
+	// Only pointer is the memory location
+	// *pointer  is the value of that memory location, which in this specific case is also a memory location
+	// **pointer is the value of what the other pointer points to.
 	**pointer = **pointer + 20;
 }
