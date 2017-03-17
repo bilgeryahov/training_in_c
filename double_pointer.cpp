@@ -26,6 +26,14 @@ int main(){
 	// So this is a pointer in between.
 	pointerInBetween = &pointer;
 	
+	printf("The first pointer points to %d\n", pointer);
+	
+	printf("The second pointer points to %d\n", pointerInBetween);
+	
+	printf("The value of the first pointer is %d\n", *pointer);
+	
+	printf("The value of the second pointer is %d\n", *pointerInBetween);
+	
 	printf("The number before changing is %d\n", number);
 	
 	// Pass the pointer variable.
@@ -35,6 +43,8 @@ int main(){
 	// Pass the pointer of a pointer variable.
 	changeViaPointerInBetween(pointerInBetween);
 	printf("The number after pointer in between changing is %d\n", number);
+
+
 	
 	return 0;
 }

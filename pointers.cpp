@@ -11,10 +11,10 @@ int main(){
 	ip = &var;
 	
 	// Print the address of var using itself.
-	printf("The address of var using itself is %x\n", &var);
+	printf("The address of var using itself is %d\n", &var);
 	
 	// Print the address of var using the pointer variable.
-	printf("The address of var using the pointer variable is %x\n", ip);
+	printf("The address of var using the pointer variable is %d\n", ip);
 	
 	// Access the value of var using the pointer variable.
 	printf("The value of var using the pointer variable is %d\n", *ip);
